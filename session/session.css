@@ -1,10 +1,11 @@
-
+/* Global css*/
 *
 {	
 	margin :0px;
 	padding: 0px;
 }
 
+/* Css for form data */
 .formdata
 {
     width: 50%;
@@ -13,12 +14,14 @@
     margin-top:5em;
 }
 
+/* Body css */
 body
 {
     margin: 0 auto;
     width: 90%;
 }
 
+/* Css for heading */
 h1
 {
     text-align: center;
