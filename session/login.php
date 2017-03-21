@@ -1,6 +1,6 @@
 <?php
         session_start();
-        
+        // Printing username which is stored in session variable.
         if(isset($_SESSION['name']))
         {
             echo "<h1> Welcome ".$_SESSION['name']." to your session area.</h1>";
@@ -14,6 +14,7 @@
 ?>
 
 <?php 
+//  Checking if Logout then session will be destroyed.
     if(isset($_GET['out']))
     {
         header("location :index.php");
