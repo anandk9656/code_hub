@@ -1,3 +1,10 @@
+
+*
+{	
+	margin :0px;
+	padding: 0px;
+}
+
 .formdata
 {
     width: 50%;
@@ -11,6 +18,7 @@ body
     margin: 0 auto;
     width: 90%;
 }
+
 h1
 {
     text-align: center;
