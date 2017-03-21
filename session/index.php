@@ -1,8 +1,9 @@
 <?php
-    session_start();
+    session_start(); // Starting session on this page.
  ?>
 
 <?php 
+// Checking username & password
     if(isset($_GET['username']) && isset($_GET['pwd']))
     {
         $_SESSION['name'] = $_GET['username'];
