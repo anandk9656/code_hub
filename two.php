@@ -1,5 +1,5 @@
 <?php
-     echo" <h1> <----: Variables in php :----> <br> <br> </h1>";       
+     echo" <h1> <----: Variables in php :----></h1>";       
     // variables in php
     $number= 123;              // integer
     $decimal=12.45;            // Float
@@ -23,5 +23,3 @@
     var_dump($decimal);
     echo"<br>"; 
     var_dump($name);
-?>
-
