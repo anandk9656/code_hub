@@ -34,5 +34,3 @@
     echo"<br>";
     echo $t1->put();  // static property called by class object with -> operator with function name,
     // echo $t1->x;   // gives error with class object.
-?>
-
