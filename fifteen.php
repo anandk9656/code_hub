@@ -1,10 +1,10 @@
 <?php
     include_once  'head.html';
-    echo" <h1> <----: Include and Require, Once :----> </H1> "."<br> <br>";
+    echo" <h1> <----: Include and Require, Once :----> </h1>";
     include 'eight.php';
    
     
-    echo "<h2><i>Checking the existence of the function by using ( function_exists ) in if-else condition.</i> </h2>"."<br> <br>";
+    echo "<h2><i>Checking the existence of the function by using ( function_exists ) in if-else condition.</i> </h2>";
     if (function_exists("array_combine"))
     {
         echo "Function exists";
@@ -15,5 +15,3 @@
     }
    include_once 'eight.php';
     include 'foot.html';
-    
-?>
