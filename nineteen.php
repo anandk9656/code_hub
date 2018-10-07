@@ -1,15 +1,9 @@
 <?php
     include 'head.html';
-    echo"<h1> <----: <i> Inheritance in php </i> :----> </h1>";
+    echo"<h1><i> Inheritance in php </i></h1>";
     class vehicle
     {
         public $color,$model;
-//        public function show()
-//        {
-//            echo "<h2> This is vehicle class i.e. Parent Class</h2>";
-//            echo"It includes color and model ";
-//       
-//        }
         function display()
         {
             echo"<h3> Vehicle class </h3>";
@@ -20,7 +14,7 @@
         public $number,$owner_name;
         function display()
         {
-            echo"<h2>This is santro class i.e.s child of vehicle class </h2>";
+            echo"<h2>This is santro class i.e. child of vehicle class </h2>";
             echo "Color is :  ". $this->color;
             echo"<br>";
             echo "Model is :  ". $this->model;
@@ -44,5 +38,4 @@
   //  $v1->show();
     $s1->display(); 
     $s1->dis();
-?>
-
+    include 'foot.html';
