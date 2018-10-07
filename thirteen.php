@@ -5,6 +5,3 @@
     echo "Implicit type conversion :  ". $c= ($a/$b);   // Implicit type conversion. 
     echo"<br> <br />";
     echo "Explicit type conversion :  ". $d= (int) ($a/$b);   // Explicit type conversion.
-?>
-
-
