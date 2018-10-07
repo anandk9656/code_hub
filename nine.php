@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+    
 echo "<-----: Objects in PHP :-----> ";
 $obj = new stdClass();
 $obj-> name = "Anand";
@@ -15,6 +15,6 @@ $obj-> mobile = 9873497838;
 
 echo '<pre>';
 print_r($obj);
-echo '</pre>',"<br> <br>";
+echo '</pre>',"<br>";
 
-echo $obj->address;
+echo "<h4>Accessing the address using ".'( $obj->address ) :'.$obj->address."</h4>";
