@@ -1,7 +1,7 @@
 <?php
         // operators in php
 
-         echo" <h1>  <----: Operators in php programming language :----> <br> <br> </h1>   ";
+         echo" <h1>  <----: Operators in php programming language :----> </h1>   ";
          echo "Number_1:   ". $num1=20;  // = assigment operator
          echo"<br>";
          echo"Number_2:  ". $num2=4;   // . operator called period is used for joining two strings.
@@ -18,13 +18,14 @@
          echo"<br><br>";
          echo"Increment : ". (++$num1);    // increment operator.
          echo"<br><br>";
-         echo"Decrement : ". (--$num2);       // decrement operator.
+         echo"Decrement : ". ($num2--);       // decrement operator.
+            //echo $num2;
+         
+         $url = "https://mysite.com/test/1234?email=xyz4@test.com&testing=123";
 
-         $url = "https://mysite.com/test/1234?email=xyz4@test.com&testin=123";
-
-         $query_str = parse_url($url, PHP_URL_QUERY);
-         parse_str($query_str, $query_params);
+        $query_str = parse_url($url, PHP_URL_QUERY);
+        parse_str($query_str, $query_params);
          echo '<pre>';
          print_r($query_params);
-         
-       
+        // print_r($query_str);
+         echo $query_params['email'];       
