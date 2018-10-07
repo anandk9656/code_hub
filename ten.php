@@ -46,4 +46,3 @@
     echo "NOT q (!q) : " . "{ ".(!$q) ."}" ; 
     echo "<br> <br>";
     echo "X (1) XOR Y (1) : ". "{" . ($X XOR $Y) ."}" ;
-?>
