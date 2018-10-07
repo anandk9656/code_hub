@@ -1,6 +1,6 @@
 <?php
     // Function 
-echo"<h1> <----: Function :---->  &  <----: Variable_scope :----> "."<br> <br> </h1>";
+echo"<h1> <----: Function :---->  &  <----: Variable_scope :----></h1>";
 echo "1. Function without parameter and return type"."<br> <br>";
     function sum()
     {
@@ -76,5 +76,3 @@ stati();  echo"<br> <br>";
 echo" <----: Superglobals :----> "."<br> <br>";
 echo'<pre>';
 print_r($GLOBALS);  // this will gives all the gloabal variable present in the code.
-?>
-
