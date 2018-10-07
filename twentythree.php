@@ -1,6 +1,6 @@
 <?php
     include 'head.html';
-    echo"<h1> <----: Arrays in php :----> </h1>";
+    echo"<h1>Arrays in php</h1>";
         echo"<h1> <---: Single dimension Array :---> </h1>";
     echo'<pre>';
     echo "<h2> Numerically indexed array  </h2>";   // In this array we uses number in the indexes of array or leave blank, php will automatically assigned indexes to the values.
@@ -26,8 +26,8 @@
     
     echo "<h2> Associative array  </h2>";       // Reference the items in an array by name rather than by number.
                                                // Each item now has a unique name that you can use to reference.
-    $student['name']="Anand_Kumar";                                                                              // name, emp_id, company, address are called as indexex or keys.
-    $student['emp_id']="0035";                                                                                  // itmem assigned to these keys are called as values. example :- Anand_Kumar, 0035, Greater Noida UP etc.
+    $student['name']="Anand_Kumar";                                                                              // name, emp_id, company, address are called as indexes or keys.
+    $student['emp_id']="0035";                                                                                  // item assigned to these keys are called as values. example :- Anand_Kumar, 0035, Greater Noida UP etc.
     $student['company']="Vidyamantra Edusystem Pvt Ltd";
     $student['address']="Greater Noida, UP";
     
@@ -39,7 +39,7 @@
     $p1=array(33,54,65,87,90);
     print_r($p1);
     echo"<br>";
-    echo"Second element of p1 array :  ". $p1[1];  // thi will print the second element of the p1 array.
+    echo"Second element of p1 array :  ". $p1[1];  // this will print the second element of the p1 array.
     echo "<br> <br>";
     
     $p2=array(
@@ -52,9 +52,8 @@
     echo"<br>";
     echo" Printing roman  : ".$p2['roman'];    // print the value of roman index defined in p2 array.
     
-    echo $p1[9];     // gives error of undefined offset because no element is present at 90 location.
+    echo $p1[9];     // gives error of undefined offset because no element is present at 9 location.
     echo $p2['ball'];   // gives error of undefined index because no defination of index 'ball';
-    
     echo "<h2>  foreach..as loop for array  </h2>";
     
     $a=array(13,42,53,84,95,26);
@@ -81,7 +80,7 @@
     echo "<h2> Printing asso. array with while loop using list and each function  </h2>";
     
   $paper = array
-      (             'copier'=>"Copier & Multipurpose",
+      (              'copier'=>"Copier & Multipurpose",
                     'inkjet'=>"Inkjet Printer",
                     'laser'=>"Laser Printer",
                     'photo'=>"Photographic Paper",
@@ -118,10 +117,12 @@ $multi =array(
                                         'policy_no'=>23424,
                                     ),
              );
-foreach($multi as $head=>$item)
-    foreach ($item as $key=> $value)
+             foreach ($multi as $head => $item) {
+                 foreach ($item as $key => $value) {
         echo "$head: $key - $value <br>";
-echo "<br> <br>";
+    }
+}
+echo "<br>";
 echo $multi ['company']['platform'];  // printing a particular element.
 echo '<pre>';
 print_r($multi);
@@ -136,10 +137,9 @@ $mul=array(
          );
 foreach($mul as $data)
 {
-    foreach($data as $val)
+    foreach ($data as $val) {
         echo $val;
+    }
     echo"<br>";
 }
 include 'foot.html';
-?>
-
