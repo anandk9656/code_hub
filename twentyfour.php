@@ -1,6 +1,6 @@
 <?php
     include 'head.html';
-    echo"<h1> <---: Predefined Array Function :---> </h1>";
+    echo"<h1>Predefined Array Function</h1>";
     
     echo "<h2> 1. is_array function </h2>";
     
@@ -12,7 +12,7 @@
     print_r($arr);
     echo'</pre>';
     echo"<h2> 2. count function </h2>";
-    echo "Array Contains : ".count($arr). " value";
+    echo "Array Contains : ".count($arr). " Elements";
     
     echo"<h2> 3. sort function </h2>";
     echo"Sorting using sort"."<br> <br>";
@@ -43,31 +43,31 @@
         $b++;
     }
     shuffle($ar);
-    echo"<br> <br>";
+    echo"<br>";
     echo"Shuffled Array <br> <br>";
     $c=0;
-     foreach($arr as $element)
+     foreach($ar as $element)
     {
         echo"[ $c ] : $element"."<br>";
         $c++;
     }
     
     echo" <h2> 5. explode function </h2>"; // split up a sentence into an array containing all its words.
-    echo"explode a string using space delimiter into an array";    
+    echo"Explode a string using space delimiter into an array";    
     $text=  explode(' ',"This is anand kumar working in vidyamantra edusystem pvt ltd");    // convert string into array consisiting of words as array elements.
     echo '<pre>';
     print_r($text)."<br> <br>";
     echo'</pre>';
     
-    echo"explode a string using *** into an array";
-    $text=  explode('***',"This***is***anand***kumar***working***is***vidyamantra***edusystem***pvt***ltd");    // convert string into array consisiting of words as array elements.
+    echo"Explode a string using *** into an array";
+    $text1=  explode('***',"This***is***anand***kumar***working***is***vidyamantra***edusystem***pvt***ltd");    // convert string into array consisiting of words as array elements.
     echo '<pre>';
-    print_r($text)."<br> <br>";
+    print_r($text1)."<br> <br>";
     echo'</pre>';
     
     echo"<h2> 6. extract function </h2> ";
     extract($ar);  //this is used when accessing data from form , it is useful in getting data from associated array _GET and _POST when used.
-    print_r($ar); // extract(__GET) :- used when data is taken form user via get method. For post method use, extract(__POST).
+   echo '<pre>'; print_r($ar); echo '</pre>'; // extract(__GET) :- used when data is taken form user via get method. For post method use, extract(__POST).
   
     echo "<h2> 7. compact function </h2>";    // to create an array from variables and their values.
     $one="Computer";
@@ -84,13 +84,13 @@
     
     echo"<h2> 8. reset and end function </h2>";    
     $money=array(1,2,5,10,20,50,100,500,1000,2000);
-    foreach($money as $data)
-    echo $data."<br>";
-    echo"<br>";
+    foreach ($money as $data) {
+    echo $data . "<br>";
+}
+echo"<br>";
     echo"Reset function :  ";
     echo reset($money);     // reset gives moves the array pointer to the first and also return value at first index. Used when we use foreach..as loop.
     echo"<br>";
     echo"end function :  ";
     echo end($money);    // end function will gives the last index and also value at last index.
     include 'foot.html';
- ?>
