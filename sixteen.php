@@ -1,36 +1,31 @@
 <?php
 include 'head.html';
-    echo"<h1> <----: Classes & Objects in php programming :---> </h1> ";
+    echo"<h1>Classes & Objects in php programming</h1> ";
     class student
     {
         public $name = 'Anand', $roll_no = 35, $marks = 76;
-        function show()
-        {
+        function show(){
             echo "<h2>This is student class </h2>";
         }
-        function put_info()
-        {
+        function put_info(){
             echo $this->name;    echo "<br>";
             echo $this->roll_no; echo "<br>";
             echo $this->marks;   echo "<br>";
         }
-    }
-    
+    }   
     $stud1=new student;
     $stud1->show();
     $stud1->put_info();
-    echo"<br>";
     
-    class book
+    class book // extends student
     {
         public $title,$no_page;
-        function show()
-        {
+        function show(){
+          //  parent::show();
             echo "<h2>This is book class </h2>";
         }
     }
-    $b1=new book;
-    
+    $b1=new book;  
     $b1->show();
     
     $b1->title="Mastering c++";
@@ -72,8 +67,5 @@ include 'head.html';
     $u1->get();
     $u1->put();
     echo"<br>";
-    echo "Your College Name is : ".$u1->clg_name; 
-    
-    echo"<br>";
-    
+    echo "Your College Name is : ".$u1->clg_name;  
     include 'foot.html';
