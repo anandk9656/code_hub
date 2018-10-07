@@ -22,4 +22,3 @@ include 'head.html';
         echo $i." = ".ord($i)."<br>";
     }
    include'foot.html';
-?>
