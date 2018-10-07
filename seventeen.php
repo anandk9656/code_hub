@@ -11,8 +11,6 @@ include 'head.html';
         }
     }
     employee::show();
-   
-    echo"<br> <br>";
     
     class declre
     {
@@ -24,6 +22,3 @@ include 'head.html';
     echo $d1->name;
     echo"<br>";
     echo $d1->Emp_code;
-    
-?>
-
