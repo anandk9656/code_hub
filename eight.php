@@ -1,7 +1,7 @@
 <?php
     // Function 
-echo"<h1> <----: Function :---->  &  <----: Variable_scope :----></h1>";
-echo "1. Function without parameter and return type"."<br> <br>";
+echo"<h1> <----: Function :---->  &  <----: Variable_scope :----> </h1>";
+echo "<h3>1. Function without parameter and return type</h3>";
     function sum()
     {
         $num1=35;                   // num1 and num2 are local variable and will be used inside the function.          
@@ -10,10 +10,10 @@ echo "1. Function without parameter and return type"."<br> <br>";
         echo $s;
     }
     sum();  // function calling
-    echo"<br> <br>"; 
+    echo"<br>"; 
      //  echo $num1;     This will give error as undefined variable.
    
-echo "2. Function without parameter and with return type"."<br> <br>";
+echo "<h3>2. Function without parameter and with return type</h3>";
     function sum1()
     {
         $num1=45;                   // num1 and num2 are local variable and will be used inside the function.          
@@ -21,9 +21,9 @@ echo "2. Function without parameter and with return type"."<br> <br>";
         return $s=($num1 + $num2);
     }
     echo sum1(); 
-    echo"<br> <br>"; 
+    echo"<br>"; 
     
-echo "3. Function with parameter and without return type"."<br> <br>";
+echo "<h3>3. Function with parameter and without return type</h3>";
 
     $numb1=1234;
     $numb2=4321;
@@ -33,9 +33,9 @@ echo "3. Function with parameter and without return type"."<br> <br>";
         echo $s;
     }
     sum2($numb1,$numb2); 
-echo"<br> <br>";
+echo"<br>";
 
-echo "4. Function with parameter and with return type"."<br> <br>";
+echo "<h3>4. Function with parameter and with return type</h3>";
 
     $num1=56;
     $num2=421;
@@ -44,9 +44,9 @@ echo "4. Function with parameter and with return type"."<br> <br>";
        return $s=($n1 + $n2);
     }
     echo sum3($num1,$num2); 
-echo"<br> <br>";
+echo"<br>";
 
-echo"5. Accessing global variable inside the function "."<br> <br>";
+echo"<h3>5. Accessing global variable inside the function</h3>";
 
 $glb1=12;   // global variable can't be used inside the function
 $glb2=15;   // these variable can be used by adding the keyword 'global' in front of them, inside the function.
@@ -54,12 +54,13 @@ function glbal()
 {
     global $glb1,$glb2; 
     $s=($glb1 + $glb2);
+    $GLOBALS['s']=$GLOBALS['glb1']+$GLOBALS['glb2'];
     echo $s;
 }
 glbal();
-echo"<br> <br>";
+echo "<br>".$s."<br>";
 
-echo"6. Static variable inside the function "."<br> <br>";
+echo"<h3>6. Static variable inside the function</h3>";
 
 function stati()
 {
@@ -73,6 +74,6 @@ stati();  echo"<br>";
 stati();  echo"<br>";
 stati();  echo"<br> <br>";
 
-echo" <----: Superglobals :----> "."<br> <br>";
+echo" <----: Superglobals :----> "."<br>";
 echo'<pre>';
 print_r($GLOBALS);  // this will gives all the gloabal variable present in the code.
