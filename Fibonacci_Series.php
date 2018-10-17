@@ -1,14 +1,12 @@
 <?php
-$arr = array(10,4,56,3,87,1,5,78,9);
-$len = count($arr);
-print_r($arr);
-for($i=0;$i<$len;$i++){
-    for($j=$i+1;$j<$len;$j++){
-        if($arr[$i]>$arr[$j]){
-            $temp = $arr[$i];
-            $arr[$i]=$arr[$j];
-            $arr[$j]=$temp;
-        }
-    }
+// Fibonacci Series
+$num = 10; // Define the no of elements in the series.
+$first = 0; // First Element of the series.
+$second = 1; // Second Element of the series.
+echo $first." ".$second." ";
+for($i=0;$i<$num-2;$i++){
+    $third = $first+$second;
+    echo $third." ";
+    $first = $second;
+    $second = $third;
 }
-print_r($arr);
